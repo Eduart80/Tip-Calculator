@@ -28,7 +28,7 @@ h1{
 
 footer,
 h4 {
-    position: fixed;
+    /* position: fixed; */
     left: 0;
     bottom: 0;
     background-color:#fddca5 ;
