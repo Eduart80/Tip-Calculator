@@ -4,30 +4,26 @@ document.getElementById("btn20").addEventListener("click", calc);
 document.getElementById("btncalculate").addEventListener("click", calc);
 
 function calc() {
-  let tipPercentage = 0;
+  let tipPercetage = 0;
   let buttonPressed = event.target.id;
 
   switch (buttonPressed) {
     case "btn15":
-      tipPercentage = 0.15;
-      document.getElementById("showpercentage").innerHTML = "15%";
+      tipPercetage = 0.15;
       break;
     case "btn17":
-      tipPercentage = 0.175;
-      document.getElementById("showpercentage").innerHTML = "17.5%";
+      tipPercetage = 0.175;
       break;
     case "btn20":
-      tipPercentage = 0.2;
-      document.getElementById("showpercentage").innerHTML = "20%";
+      tipPercetage = 0.2;
       break;
     case "btncalculate":
-      tipPercentage = document.getElementById("customTip").value / 100;
-      document.getElementById("showpercentage").innerHTML = "your %";
+      tipPercetage = document.getElementById("customTip").value / 100;
   }
 
   let billAmount = document.getElementById("billAmount").value;
   billAmount = parseFloat(billAmount);
-  let tip = billAmount * tipPercentage;
+  let tip = billAmount * tipPercetage;
   let total = tip + billAmount;
   reportTotal(tip, total);
 }
@@ -41,5 +37,5 @@ function reportTotal(tip, total) {
 }
 let getYear = new Date();
 document.getElementById("footerYear").innerHTML=
-"Zedy3D copyright ©" + getYear.getFullYear();
+"Zedy copyright ©" + getYear.getFullYear();
 console.log(getYear.getFullYear());
