@@ -1,0 +1,26 @@
+{
+  "name": "tip-calculator",
+  "version": "1.0.0",
+  "description": "This is a smoll calculator for tips\r   using HTML, CSS and Javascript\r Try it out:\r http://tipcalculator.zedy3d2.com/",
+  "main": "script.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eduart80/Tip-Calculator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Eduart80/Tip-Calculator/issues"
+  },
+  "homepage": "https://github.com/Eduart80/Tip-Calculator#readme",
+  "dependencies": {
+    "chai": "^4.3.6",
+    "jest": "^28.1.3"
+  }
+}
