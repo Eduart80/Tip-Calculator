@@ -1,61 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Tip-Calculator</title>
+    <title>Tip-Calculator App</title>
+    <link rel="icon" href="##" type="image/gif" size="20x20">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="myStyle.css" rel="stylesheet">
-    <!--- font -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="./myStyle.css" rel="stylesheet">
     <!-- Bootstrap CSS -->
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
 
-</head> 
 <body>
+
     <div class="row" style="margin-left: 0px; margin-right: 0px;">
-        <div class="col-md-12" >
+        <div class="col-md-12">
             <header>
                 <h1>Tip Calculator</h1>
             </header>
         </div>
         <div class="col-md-3">
-            <h1>Left Side</h1>
+            <br />
         </div>
         <div class="col-md-6">
             <div class="card">
-                <label for="billAmount">Bill Amount</label>
-                <input type="text" id="billAmount" placeholder="enter here..."/>
-                <button id="btn15">15%</button>
-                <button class="btn" id="btn17">17.5%</button>
-                <button class="btn" id="btn20">20%</button>
-                <input type="text" placeholder="Custom Tip Amount in %" id="customTip"/>
+                <label class="billHead" for="billAmount">Bill Amount</label>
+                <input placeholder="Enter amount here" type="text" id="billAmount" />
+                <button id="btn15">15 %</button>
+                <button class="btn" id="btn17">17.5 %</button>
+                <button class="btn" id="btn20">20 %</button>
+                <input class="inCostum" type="text" placeholder="Custom Tip Amount  %" id="customTip" />
                 <button class="btn" id="btncalculate">Calculate</button>
-                <h5>Result of: <span id="showpercentage"></span></h5>
+                <h4 id="resultInfo">Result of: <span id="showpercentage"></span></h4>
                 <p>Tip Amount: <output id="tipAmount"></output></p>
                 <p>Total: <output id="total"></output></p>
+                <button class="btn" id="btnclear">Clear</button>
             </div>
         </div>
         <div class="col-md-3">
-            <h1>Right Side</h1>
+            <br />
         </div>
-          <div id="info">
-        <p>How it work?<br/>
-            Enter your bill amount.
-            Then select percentage<br/>
-            As result, you will see
-            Tip amount based on your entry
-            and the total to pay
-        </p>
-        <p>There is also a section of costum %</p>
+        <div id="info">
+            <p>How it work?<br />
+                Enter your bill amount.<br/>
+                Then select percentage.<br />
+                As result, you will see Tip amount<br/>
+                based on your entry<br/>
+                and the total to pay
+            </p>
+            <p>There is also a section of costum %.<br/>
+               Enter amount first, then tip percentage<br/>
+                in section "Costum tip Amount %".<br/>
+                Then click button Calculate</p>
         </div>
         <div class="col-md-12">
             <footer>
-                <h4 id="footerYear">Zedy copyright ©</h4>
+                <!-- <p id ="footerYear"></p> -->
+                <h4 id="footerYear">Zedy copyright © <span id="yearNow"></span></h4>
             </footer>
         </div>
     </div>
-    
-<script src="script.js"></script>
+
+    <script type="text/javascript" src="./script.js"></script>
 </body>
 </html>

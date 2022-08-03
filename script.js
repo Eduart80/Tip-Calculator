@@ -2,12 +2,14 @@ document.getElementById("btn15").addEventListener("click", calc);
 document.getElementById("btn17").addEventListener("click", calc);
 document.getElementById("btn20").addEventListener("click", calc);
 document.getElementById("btncalculate").addEventListener("click", calc);
+document.getElementById("btnclear").addEventListener("click", clearField);
+
 
 function calc() {
   let tipPercentage = 0;
-  let buttonPressed = event.target.id;
+  let idEnter = event.target.id
 
-  switch (buttonPressed) {
+  switch (idEnter) {
     case "btn15":
       tipPercentage = 0.15;
       document.getElementById("showpercentage").innerHTML = "15%";
@@ -31,6 +33,7 @@ function calc() {
   let total = tip + billAmount;
   reportTotal(tip, total);
 }
+
 function reportTotal(tip, total) {
   tip = tip.toFixed(2);
   total = total.toFixed(2);
@@ -39,7 +42,11 @@ function reportTotal(tip, total) {
   document.getElementById("total").innerHTML =
     "<strong>$" + total + "</strong>";
 }
-let getYear = new Date();
-document.getElementById("footerYear").innerHTML=
-"Zedy3D copyright ©" + getYear.getFullYear();
-console.log(getYear.getFullYear());
+
+function clearField() {
+  document.getElementById("billAmount").value = ''
+  document.querySelector('.inCostum').value = ''
+}
+
+let getYear = new Date()
+document.getElementById("yearNow").innerHTML = getYear.getFullYear()

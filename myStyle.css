@@ -1,24 +1,24 @@
 body{
-    margin: 0px 0px;
+    margin: 0px;
     line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif
 }
-
 .card{
-    margin: 0 15%;
+    margin: 2px;
     text-align: center;
     font-weight: 150%;
 }
 .col-md-12{
-    background-color: #fddca5;
-    font-family: 'Satisfy', cursive;
+    background-color: #e4f9ff;
 }
 .col-md-3,
 .col-md-6{
     margin-bottom: 20px;
-    font-family: 'Satisfy', cursive;
     letter-spacing: 2px;
 }
-
+.billHead{
+    font-size:20px;
+}
 header{
     margin: 25px 25px;
 }
@@ -26,41 +26,48 @@ h1{
     text-align: center;
 }
 
-footer,
-h4 {
-    /* position: fixed; */
-    left: 0;
-    bottom: 0;
-    background-color:#fddca5 ;
-    width: 100%;
+footer {
     text-align: center;
     margin-right: 0px;
     margin-left: 0px;
-    padding: 25px 0px 25px 0px;
-    
-    
-}
-h5{
-    margin: 0px;
-    padding: 10px 0px;
+    padding: 25px 0px;
+    font-size:25px;
 }
 
 #btn15,
 #btn17,
 #btn20,
-#btncalculate{
+#btncalculate,
+#btnclear{
     color: white;
     background-color: #00bc7d;
     border: solid 0.1px #0101af;
     text-decoration: none;
-    font-size: 20px;
 }
 #customTip,
 #billAmount{
     text-align: center;
-    font-size: 20px;
+    font-size: 16px;
+    padding: 8px 0px;
+}
+#resultInfo{
+    padding-top: 10px;
 }
 #info{
     text-align: center;
-    font-family: 'Satisfy', cursive;
+    padding: 0px 50px;
+    text-justify: center;
+}
+@media screen and (max-width:768px) {
+    #info{
+        text-align: center;
+        padding: 0px 10px;
+    }
+}
+#tipAmount,
+#total{
+    font-size:18px;
+}
+#footerYear{
+    font-size:12px;
 }
