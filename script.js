@@ -50,3 +50,7 @@ function clearField() {
 
 let getYear = new Date()
 document.getElementById("yearNow").innerHTML = getYear.getFullYear()
+
+const parsIntByString = function (text){
+  return Number(text.replace(/[^\d.]/g, ""))
+}
