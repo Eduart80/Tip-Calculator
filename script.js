@@ -46,6 +46,8 @@ function reportTotal(tip, total) {
 function clearField() {
   document.getElementById("billAmount").value = ''
   document.querySelector('.inCostum').value = ''
+  document.querySelector('#total').value = ''
+  document.querySelector('#tipAmount').value = ''
 }
 
 let getYear = new Date()
