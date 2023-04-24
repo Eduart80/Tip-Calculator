@@ -4,8 +4,9 @@ const ElemPage = require('../calculator/elemPage')
 
 describe('Test one', () => {
     beforeEach(async () => {
-        await ElemPage.open()
-        await browser.pause(2000)
+       // await ElemPage.open()
+        await browser.url('https://eduart80.github.io/Tip-Calculator/')
+        await browser.pause(4000)
     })
     it('enter amount 324 with 15%', async () => {
         const findEl = await ElemPage.entryField
