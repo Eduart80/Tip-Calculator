@@ -2,8 +2,6 @@ body{
     margin: 0px;
     line-height: 1.5;
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url('./images/color-palette.jpg');
-    background-position: right;
 }
 .card{
     margin: 2px;
@@ -11,7 +9,7 @@ body{
     font-weight: 150%;
 }
 .col-md-12{
-    background-color: #e4f9ff;
+    background-color: #00bc7d;
 }
 .col-md-3,
 .col-md-6{
@@ -29,11 +27,18 @@ h1{
 }
 
 footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
     text-align: center;
-    margin-right: 0px;
-    margin-left: 0px;
-    padding: 25px 0px;
-    font-size:25px;
+    width: 100%;
+    background-color: #00bc7d;
+    margin-top: 10px;
+}
+footer h4 {
+    font-size: medium;
+    padding: 15px 0 15px 0;
+    margin: 0;
 }
 
 #btn15,
@@ -43,8 +48,9 @@ footer {
 #btnclear{
     color: white;
     background-color: #00bc7d;
-    border: solid 0.1px #0101af;
+    border: solid 0.1px #00002b;
     text-decoration: none;
+    border-radius: 3px;
 }
 #customTip,
 #billAmount{
@@ -57,13 +63,15 @@ footer {
 }
 #info{
     text-align: center;
-    padding: 0px 50px;
+    padding: 0px 50px 20px 50px;
     text-justify: center;
+    margin-bottom: 10px;
 }
 @media screen and (max-width:768px) {
     #info{
         text-align: center;
-        padding: 0px 10px;
+        padding: 0px 10px 20px 10px;
+       
     }
 }
 #tipAmount,
