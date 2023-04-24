@@ -1,5 +1,6 @@
 # Tip-Calculator
 This is a smoll calculator for tips
   using HTML, CSS and Javascript
+  Testing env with WDIO
 Try it out:
-http://tipcalculator.zedy3d2.com/
+https://eduart80.github.io/Tip-Calculator/
