@@ -4,3 +4,5 @@ This is a smoll calculator for tips
   Testing env with WDIO
 Try it out:
 https://eduart80.github.io/Tip-Calculator/
+
+
